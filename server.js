@@ -1,14 +1,17 @@
 const express = require("express");
 const app = express();
+const taskRoutes = require('./routes/taskRoutes');
+const errorHandler = require('./middleware/errorHandler');
 const PORT = 8000;
 
 
 app.use(express.json());
 
-let tasks = [
-    {id : 1, title: "Learn Node.js", completed: false},
-    {id : 2, title: "build an API", completed: false}
-];
+app.use('/api',taskRoutes);
+
+//Error Handler
+app.use(errorHandler);
+
 
 
 app.listen(PORT, () => {
