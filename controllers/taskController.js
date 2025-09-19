@@ -1,3 +1,5 @@
+const {body, validationResult} = require("express-validator");
+ 
 let tasks = [
     {id : 1, title: "Learn Node.js", completed: false},
     {id : 2, title: "build an API", completed: false}
@@ -25,6 +27,7 @@ const getTask = (req, res, next) => {
 //Create Task
 const createTask = (req, res, next) => {
     
+   
     const { title } = req.body;
     if(!title){
         const error = new Error("Title is required");
@@ -64,7 +67,8 @@ const updateTask = (req, res, next) => {
 
 //Delete Task
 const deleteTask = (req, res, next) => {
-    const index = tasks.filter((item) => item.id !==parseInt(req.params.id));
+    const id = parseInt(req.params.id);
+    const index = tasks.findIndex((item) => item.id === id);
     if(index === -1){
         const error = new Error("Task not found");
         error.status = 404;
@@ -72,7 +76,7 @@ const deleteTask = (req, res, next) => {
     }
 
     tasks.splice(index, 1);
-    res.status(200).json({})
+    res.status(200).json({message: "Task deleted succeesfully"});
 }
 
 
