@@ -1,19 +1,9 @@
-const express = require("express");
-const app = express();
-const taskRoutes = require('./routes/taskRoutes');
-const errorHandler = require('./middleware/errorHandler');
-const PORT = 8000;
+const dotenv = require("dotenv");
+dotenv.config();
 
-
-app.use(express.json());
-
-app.use('/api',taskRoutes);
-
-//Error Handler
-app.use(errorHandler);
-
-
+const app = require("./app");
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-    console.log(`Server running at port ${PORT}`);
+  console.log(`Server running at port ${PORT}`);
 });
