@@ -72,7 +72,7 @@ const deleteTask = (req, res, next) => {
     }
 
     tasks.splice(index, 1);
-    res.status(200).json({ message: "Task deleted succeesfully" });
+    res.status(200).json({ message: "Task deleted successfully" });
 };
 
 module.exports = {
