@@ -20,20 +20,19 @@ This project demonstrates clean project structure with controllers, routes, midd
 
 ---
 
-## 📂 Project Structure
+## 🛠 Installation & Setup
 
-NODE-EXPRESS/
-│── controllers/ # Controllers (business logic)
-│── data/ # JSON data (seeded tasks)
-│── logs/ # Winston logs
-│── middleware/ # Middlewares (error handler, validators)
-│── routes/ # API routes
-│── seed/ # Seed script
-│── tests/ # Jest + Supertest tests
-│── utils/ # Utility functions (taskStore, etc.)
-│── validators/ # Request validators
-│── app.js # Express app config
-│── server.js # Server entry point
-│── .env # Environment variables
-│── .gitignore # Ignored files/folders
-│── README.md # Project documentation
+```bash
+# Clone repo
+git clone https://github.com/paopaomanuzon24/node-express-crud-app.git
+
+# Install dependencies
+npm install
+
+# Run seed data (initial tasks.json)
+node seed/seedData.js
+
+# Start server
+npm run start
+
+```
