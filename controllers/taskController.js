@@ -1,10 +1,7 @@
 const logger = require("../logger");
 const { loadTasks, saveTasks } = require("../utils/taskStore");
 
-const tasks = [
-    { id: 1, title: "Learn Node.js", completed: false },
-    { id: 2, title: "build an API", completed: false },
-];
+
 
 //Get Tasks
 const getTasks = (req, res) => {
@@ -77,7 +74,7 @@ const deleteTask = (req, res, next) => {
     let tasks = loadTasks();
     const id = parseInt(req.params.id);
     const index = tasks.findIndex((item) => item.id === id);
-    
+
     if (index === -1) {
         logger.warn(`Failed to delete - Task with ID ${id} not found`);
         const error = new Error("Task not found");

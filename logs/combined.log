@@ -9,3 +9,17 @@
 {"level":"http","message":"GET /api/tasks 200 155 - 6.612 ms","timestamp":"2025-09-24T06:05:44.047Z"}
 {"level":"info","message":"Fetching all tasks","timestamp":"2025-09-24T06:05:56.644Z"}
 {"level":"http","message":"GET /api/tasks 200 154 - 1.621 ms","timestamp":"2025-09-24T06:05:56.646Z"}
+{"level":"info","message":"Fetching all tasks","timestamp":"2025-09-24T07:20:55.247Z"}
+{"level":"http","message":"GET /api/tasks 200 155 - 4.940 ms","timestamp":"2025-09-24T07:20:55.252Z"}
+{"level":"info","message":"Fetch task with ID 1","timestamp":"2025-09-24T07:20:55.265Z"}
+{"level":"http","message":"GET /api/tasks/1 200 50 - 1.866 ms","timestamp":"2025-09-24T07:20:55.267Z"}
+{"level":"warn","message":"Task with ID 999 not found","timestamp":"2025-09-24T07:20:55.277Z"}
+{"level":"http","message":"GET /api/tasks/999 404 44 - 47.546 ms","timestamp":"2025-09-24T07:20:55.323Z"}
+{"level":"info","message":"Created new task with ID 4: \"Test task\"","timestamp":"2025-09-24T07:20:55.373Z"}
+{"level":"http","message":"POST /api/tasks 201 46 - 11.081 ms","timestamp":"2025-09-24T07:20:55.375Z"}
+{"level":"info","message":"Updated task with ID 1","timestamp":"2025-09-24T07:20:55.390Z"}
+{"level":"http","message":"PUT /api/tasks/1 200 48 - 4.348 ms","timestamp":"2025-09-24T07:20:55.392Z"}
+{"level":"info","message":"Deleted task with ID 2","timestamp":"2025-09-24T07:20:55.402Z"}
+{"level":"http","message":"DELETE /api/tasks/2 200 39 - 4.204 ms","timestamp":"2025-09-24T07:20:55.404Z"}
+{"level":"warn","message":"Failed to delete - Task with ID 999 not found","timestamp":"2025-09-24T07:20:55.413Z"}
+{"level":"http","message":"DELETE /api/tasks/999 404 44 - 12.935 ms","timestamp":"2025-09-24T07:20:55.426Z"}
