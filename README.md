@@ -1,7 +1,24 @@
 # 📝 Task API (Node.js + Express)
 
-![Node.js](https://img.shields.io/badge/node.js-18.x-green)
-![Express](https://img.shields.io/badge/express-4.x-lightgrey)
-![Jest](https://img.shields.io/badge/tests-passing-brightgreen)
-![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4)
-![License](https://img.shields.io/badge/license-MIT-blue)
+A simple CRUD API built with **Node.js** and **Express**.  
+This project demonstrates clean project structure with controllers, routes, middlewares, logging, validation, data seeding, and testing.
+
+---
+
+## 🚀 Features
+
+- Controller & Route separation
+- Error handling middleware
+- Input validation with **express-validator**
+- Centralized validate middleware
+- Utilities folder for reusable logic
+- ESLint + Prettier for clean code style
+- Environment variables with `.env`
+- Logging with **Winston** + **Morgan**
+- Data seeding & JSON-based data storage
+- Unit & integration testing using **Jest** + **Supertest**
+- Postman collection for API testing
+
+---
+
+## 📂 Project Structure
