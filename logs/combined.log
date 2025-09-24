@@ -23,3 +23,23 @@
 {"level":"http","message":"DELETE /api/tasks/2 200 39 - 4.204 ms","timestamp":"2025-09-24T07:20:55.404Z"}
 {"level":"warn","message":"Failed to delete - Task with ID 999 not found","timestamp":"2025-09-24T07:20:55.413Z"}
 {"level":"http","message":"DELETE /api/tasks/999 404 44 - 12.935 ms","timestamp":"2025-09-24T07:20:55.426Z"}
+{"level":"info","message":"Fetching all tasks","timestamp":"2025-09-24T07:42:35.025Z"}
+{"level":"http","message":"GET /api/tasks 200 150 - 6.816 ms","timestamp":"2025-09-24T07:42:35.032Z"}
+{"level":"info","message":"Fetch task with ID 1","timestamp":"2025-09-24T07:42:40.928Z"}
+{"level":"http","message":"GET /api/tasks/1 200 48 - 1.442 ms","timestamp":"2025-09-24T07:42:40.929Z"}
+{"level":"info","message":"Created new task with ID 4: \"paopaoapaopaoa\"","timestamp":"2025-09-24T07:42:49.035Z"}
+{"level":"http","message":"POST /api/tasks 201 52 - 7.900 ms","timestamp":"2025-09-24T07:42:49.037Z"}
+{"level":"info","message":"Fetching all tasks","timestamp":"2025-09-24T07:42:56.912Z"}
+{"level":"http","message":"GET /api/tasks 200 203 - 1.172 ms","timestamp":"2025-09-24T07:42:56.913Z"}
+{"level":"http","message":"GET /api/tasks 404 148 - 1.963 ms","timestamp":"2025-09-24T09:55:53.475Z"}
+{"level":"http","message":"GET /api/tasks 404 148 - 2.672 ms","timestamp":"2025-09-24T09:58:46.672Z"}
+{"level":"http","message":"GET /api/tasks 404 148 - 0.842 ms","timestamp":"2025-09-24T09:58:54.047Z"}
+{"level":"info","message":"Fetching all tasks","timestamp":"2025-09-24T09:59:03.088Z"}
+{"level":"http","message":"GET /api/tasks 200 155 - 11.145 ms","timestamp":"2025-09-24T09:59:03.098Z"}
+{"level":"info","message":"Created new task with ID 4: \"New Title\"","timestamp":"2025-09-24T10:01:49.805Z"}
+{"level":"http","message":"POST /api/tasks 201 45 - 7.098 ms","timestamp":"2025-09-24T10:01:49.808Z"}
+{"level":"http","message":"PUT /api/tasks 404 148 - 1.307 ms","timestamp":"2025-09-24T10:02:36.964Z"}
+{"level":"info","message":"Updated task with ID 1","timestamp":"2025-09-24T10:02:39.514Z"}
+{"level":"http","message":"PUT /api/tasks/1 200 48 - 3.691 ms","timestamp":"2025-09-24T10:02:39.516Z"}
+{"level":"info","message":"Deleted task with ID 1","timestamp":"2025-09-24T10:03:07.669Z"}
+{"level":"http","message":"DELETE /api/tasks/1 200 39 - 2.320 ms","timestamp":"2025-09-24T10:03:07.670Z"}
