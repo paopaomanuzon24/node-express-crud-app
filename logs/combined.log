@@ -5,3 +5,7 @@
 {"level":"http","message":"GET /api/tasks/1 200 50 - 1.636 ms","timestamp":"2025-09-24T05:39:42.518Z"}
 {"level":"warn","message":"Task with ID 5 not found","timestamp":"2025-09-24T05:39:45.281Z"}
 {"level":"http","message":"GET /api/tasks/5 404 44 - 1.945 ms","timestamp":"2025-09-24T05:39:45.283Z"}
+{"level":"info","message":"Fetching all tasks","timestamp":"2025-09-24T06:05:44.040Z"}
+{"level":"http","message":"GET /api/tasks 200 155 - 6.612 ms","timestamp":"2025-09-24T06:05:44.047Z"}
+{"level":"info","message":"Fetching all tasks","timestamp":"2025-09-24T06:05:56.644Z"}
+{"level":"http","message":"GET /api/tasks 200 154 - 1.621 ms","timestamp":"2025-09-24T06:05:56.646Z"}
