@@ -11,7 +11,6 @@ This project demonstrates clean project structure with controllers, routes, midd
 - Error handling middleware
 - Input validation with **express-validator**
 - Centralized validate middleware
-- Utilities folder for reusable logic
 - ESLint + Prettier for clean code style
 - Environment variables with `.env`
 - Logging with **Winston** + **Morgan**
@@ -22,3 +21,19 @@ This project demonstrates clean project structure with controllers, routes, midd
 ---
 
 ## 📂 Project Structure
+
+NODE-EXPRESS/
+│── controllers/ # Controllers (business logic)
+│── data/ # JSON data (seeded tasks)
+│── logs/ # Winston logs
+│── middleware/ # Middlewares (error handler, validators)
+│── routes/ # API routes
+│── seed/ # Seed script
+│── tests/ # Jest + Supertest tests
+│── utils/ # Utility functions (taskStore, etc.)
+│── validators/ # Request validators
+│── app.js # Express app config
+│── server.js # Server entry point
+│── .env # Environment variables
+│── .gitignore # Ignored files/folders
+│── README.md # Project documentation
